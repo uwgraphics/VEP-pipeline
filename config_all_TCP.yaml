@@ -1,0 +1,549 @@
+AB:
+   main-config:
+   TYPE:
+
+ABBR:
+   main-config:
+      - text
+   EXPAN:
+   REND:
+
+ABOVE:
+   main-config:
+      - text
+
+ADD:
+   main-config:
+      - text
+   PLACE:
+   REND:
+
+ALTBIBNO:
+   main-config:
+      - csv
+   T:
+
+ARGUMENT:
+   main-config:
+      - text
+
+AUTHOR:
+   main-config:
+      - text
+      - csv
+
+AVAILABILITY:
+   main-config:
+      - ignore
+
+BACK:
+   main-config:
+      - text
+
+BELOW:
+   main-config:
+      - text
+
+BIBL:
+   main-config:
+      - text
+
+BIBLFULL:
+   main-config:
+      - ignore
+
+BIBNO:
+   main-config:
+      - csv
+   T:
+      - csv
+
+BODY:
+   main-config:
+      - text
+   LANG:
+
+BYLINE:
+   main-config:
+      - text
+      - newLine
+
+CELL:
+   main-config:
+      - text
+   ROWS:
+   ROLE:
+   COLS:
+   REND:
+   N:
+
+CHANGE:
+   main-config:
+      - csv
+
+CLOSER:
+   main-config:
+      - text
+      - newLine
+   REND:
+
+COLLECTION:
+   main-config:
+      - ignore
+
+DATE:
+   main-config:
+      - text
+      - csv
+
+DATELINE:
+   main-config:
+      - text
+
+DEL:
+   main-config:
+      - text
+
+DIV1:
+   main-config:
+      - text
+   LANG:
+   REND:
+   N:
+   SUBTYPE:
+   TYPE:
+   ID:
+
+DIV2:
+   main-config:
+   LANG:
+   TYPE:
+   ID:
+   REND:
+   N:
+
+DIV3:
+   main-config:
+   LANG:
+   TYPE:
+   ID:
+   REND:
+   N:
+
+DIV4:
+   main-config:
+   LANG:
+   TYPE:
+   ID:
+   N:
+
+DIV5:
+   main-config:
+   LANG:
+   TYPE:
+   N:
+
+DIV6:
+   main-config:
+   LANG:
+   TYPE:
+   N:
+
+DIV7:
+   main-config:
+   TYPE:
+   N:
+
+EDITION:
+   main-config:
+      - csv
+
+EDITIONSTMT:
+   main-config:
+      - csv
+
+EDITORIALDECL:
+   main-config:
+      - ignore
+   N:
+
+EEBO:
+   main-config:
+      - csv
+
+ENCODINGDESC:
+   main-config:
+      - ignore
+
+EPIGRAPH:
+   main-config:
+      - text
+      - newLine
+
+ETS:
+   main-config:
+
+EXTENT:
+   main-config:
+
+FIGDESC:
+   main-config:
+      - text
+
+FILEDESC:
+   main-config:
+      - ignore
+
+FIGURE:
+   main-config:
+      - text
+   REND:
+   N:
+   
+
+FRONT:
+   main-config:
+      - text
+   LANG:
+
+FW:
+   main-config:
+      - text
+   PLACE:
+
+GAP:
+   main-config:
+      - text
+   DISP:
+   LANG:
+   REND:
+   RESP:
+   REASON:
+   EXTENT:
+   DESC:
+
+GROUP:
+   main-config:
+   LANG:
+   TYPE:
+   N:
+   
+HEAD:
+   main-config:
+      - text
+      - newLine
+   TYPE:
+   REND:
+
+HEADER:
+   main-config:
+      - ignore
+HEADNOTE:
+   main-config:
+      - text
+
+HI:
+   main-config:
+      - text
+   REND:
+
+IDG:
+   main-config:
+      - csv
+   S:
+      - csv
+   R:
+      - csv
+   ID:
+      - csv
+
+IDNO:
+   main-config:
+   TYPE:
+
+ITEM:
+   main-config:
+      - text
+   ROLE:
+   N:
+
+KEYWORDS:
+   main-config:
+      - ignore
+
+L:
+   main-config:
+      - text
+      - newLine
+   LANG:
+   ID:
+   REND:
+   N:
+
+LABEL:
+   main-config:
+      - text
+   ROLE:
+
+LANGUAGE:
+   main-config:
+
+LANGUSAGE:
+   main-config:
+   ID:
+
+LB:
+   main-config:
+   TYPE:
+
+LETTER:
+   main-config:
+      - text
+      - newLine
+   LANG:
+   SUBTYPE:
+   REND:
+   N:
+
+LG:
+   main-config:
+      - text
+   LANG:
+   ID:
+   TYPE:
+   REND:
+   N:
+
+LIST:
+   main-config:
+      - text
+      - newLine
+   TYPE:
+   N:
+
+MILESTONE:
+   main-config:
+   REND:
+   ID:
+   UNIT:
+   N:
+
+NAME:
+   main-config:
+      - csv
+
+NOTE:
+   main-config:
+      - text
+      - newLine
+   TYPE:
+   RESP:
+   PLACE:
+   N:
+
+NOTESSTMT:
+   main-config:
+      - ignore
+
+OPENER:
+   main-config:
+      - text
+      - newLine
+   REND:
+
+P:
+   main-config:
+      - text
+      - doubleNewLine
+   LANG:
+   ROLE:
+   ID:
+   REND:
+   N:
+
+PB:
+   main-config:
+      - text
+   REF:
+   MS:
+   N:
+
+POSTSCRIPT:
+   main-config:
+      - text
+      - newLine
+   LANG:
+   TYPE:
+   REND:
+
+PROFILEDESC:
+   main-config:
+      - ignore
+
+PROJECTDESC:
+   main-config:
+      - ignore
+
+PTR:
+   main-config:
+   TARGET:
+
+PUBLICATIONSTMT:
+   main-config:
+      - ignore
+
+PUBLISHER:
+   main-config:
+      - csv
+
+PUBPLACE:
+   main-config:
+      - csv
+
+Q:
+   main-config:
+      - text
+   LANG:
+   TYPE:
+   REND:
+
+REF:
+   main-config:
+      - text
+   TARGET:
+
+RESP:
+   main-config:
+      - csv
+
+RESPSTMT:
+   main-config:
+      - ignore
+      - csv
+
+REVDESCR:
+   main-config:
+      - ignore
+
+REVISIONDESC:
+   main-config:
+      - ignore
+
+ROW:
+   main-config:
+      - text
+   ROLE:
+
+SALUTE:
+   main-config:
+      - text
+
+SEG:
+   main-config:
+      - text
+   LANG:
+   TYPE:
+   REND:
+
+SERIESSTMT:
+   main-config:
+      - ignore
+
+SIGNED:
+   main-config:
+      - text
+      - newLine
+
+SOURCEDESC:
+   main-config:
+      - ignore
+
+SP:
+   main-config:
+      - newLine
+   LANG:
+   REND:
+
+SPEAKER:
+   main-config:
+      - text
+
+STAGE:
+   main-config:
+      - text
+   TYPE:
+   REND:
+   PLACE:
+   N:
+
+STC:
+   main-config:
+      - csv
+   T:
+      - csv
+
+SUB:
+   main-config:
+      - text
+
+SUBST:
+   main-config:
+
+SUP:
+   main-config:
+      - text
+
+TABLE:
+   main-config:
+      - text
+   ROWS:
+   COLS:
+   N:
+
+TAILNOTE:
+   main-config:
+      - text
+
+TEMPHEAD:
+   main-config:
+      - csv
+
+TERM:
+   main-config:
+      - csv
+
+TEXT:
+   main-config:
+      - text
+   LANG:
+   TYPE:
+
+TEXTCLASS:
+   main-config:
+      - csv
+
+TITLE:
+   main-config:
+      - csv
+   I2:
+   TYPE:
+
+TITLESTMT:
+   main-config:
+      - ignore
+
+TRAILER:
+   main-config:
+      - text
+      - newLine
+   TYPE:
+   REND:
+
+UNCLEAR:
+   main-config:
+      - text
+   REASON:
+
+VID:
+   main-config:
+      - csv
