@@ -1,14 +1,6 @@
-
+#encoding = utf-8
 def getConversionDict():
     conversion_dict = dict()
-
-    # http://www.kreativekorp.com/charset/unicode.php?block=0300
-    cdm_idx_start = '\u0300'
-    cdm_idx_end = '\u036F'
-    # from \u0300 (768) to \u036F (879)
-    for i in range( ord(cdm_idx_start), ord(cdm_idx_end)+1 ):
-        conversion_dict[i] = '|'
-
     # conversion_dict is a hand-curated dictionary of ascii equivalents for common unicode characters in the TCP
 
     conversion_dict['Œ'] = 'OE'
@@ -183,62 +175,6 @@ def getConversionDict():
     conversion_dict['﻿'] = '@'
 
 
-    #weird "latin" character conversion
-    conversion_dict[u'A'] = 'A'
-    conversion_dict[u'B'] = 'B'
-    conversion_dict[u'C'] = 'C'
-    conversion_dict[u'D'] = 'D'
-    conversion_dict[u'E'] = 'E'
-    conversion_dict[u'F'] = 'F'
-    conversion_dict[u'G'] = 'G'
-    conversion_dict[u'H'] = 'H'
-    conversion_dict[u'I'] = 'I'
-    conversion_dict[u'J'] = 'J'
-    conversion_dict[u'K'] = 'K'
-    conversion_dict[u'L'] = 'L'
-    conversion_dict[u'M'] = 'M'
-    conversion_dict[u'N'] = 'N'
-    conversion_dict[u'O'] = 'O'
-    conversion_dict[u'P'] = 'P'
-    conversion_dict[u'Q'] = 'Q'
-    conversion_dict[u'R'] = 'R'
-    conversion_dict[u'S'] = 'S'
-    conversion_dict[u'T'] = 'T'
-    conversion_dict[u'U'] = 'U'
-    conversion_dict[u'V'] = 'V'
-    conversion_dict[u'W'] = 'W'
-    conversion_dict[u'X'] = 'X'
-    conversion_dict[u'Y'] = 'Y'
-    conversion_dict[u'Z'] = 'Z'
-
-    conversion_dict[u'a'] = 'a'
-    conversion_dict[u'b'] = 'b'
-    conversion_dict[u'c'] = 'c'
-    conversion_dict[u'd'] = 'd'
-    conversion_dict[u'e'] = 'e'
-    conversion_dict[u'f'] = 'f'
-    conversion_dict[u'g'] = 'g'
-    conversion_dict[u'h'] = 'h'
-    conversion_dict[u'i'] = 'i'
-    conversion_dict[u'j'] = 'j'
-    conversion_dict[u'k'] = 'k'
-    conversion_dict[u'l'] = 'l'
-    conversion_dict[u'm'] = 'm'
-    conversion_dict[u'n'] = 'n'
-    conversion_dict[u'o'] = 'o'
-    conversion_dict[u'p'] = 'p'
-    conversion_dict[u'q'] = 'q'
-    conversion_dict[u'r'] = 'r'
-    conversion_dict[u's'] = 's'
-    conversion_dict[u't'] = 't'
-    conversion_dict[u'U'] = 'u'
-    conversion_dict[u'v'] = 'v'
-    conversion_dict[u'w'] = 'w'
-    conversion_dict[u'x'] = 'x'
-    conversion_dict[u'y'] = 'y'
-    conversion_dict[u'z'] = 'z'
-
-
     conversion_dict['\u0163'] = 't'
     conversion_dict['\u014d'] = 'o'
     conversion_dict['\u016b'] = 'u'
@@ -259,5 +195,36 @@ def getConversionDict():
     conversion_dict['ŭ'] = 'u'
     conversion_dict['ŏ'] = 'o'
     conversion_dict['\u03a5'] = 'Y'
+    conversion_dict['é'] = 'e'
+    conversion_dict['Å'] = 'A'
+    conversion_dict['т'] = 'T'
+    conversion_dict['⁽'] = '('
+    conversion_dict['╌'] = '--'
+    conversion_dict['ŵ'] = 'w'
+    conversion_dict['ḍ'] = 'd'
+    conversion_dict['−'] = '-'
+    conversion_dict['ʐ'] = 'z'
+    conversion_dict['Κ'] = 'K'
+    conversion_dict['Ụ'] = 'U'
+    conversion_dict['Ἥ'] = 'H'
+    conversion_dict['❴'] = '{'
+    conversion_dict['Т'] = 'T'
+    conversion_dict['Š'] = 'S'
+    conversion_dict['Ή'] = 'H'
+    conversion_dict['Е'] = 'E'
+    conversion_dict['Ϝ'] = 'F'
+    conversion_dict['В'] = 'B'
+    conversion_dict['М'] = 'M'
+    conversion_dict['А'] = 'A'
+    conversion_dict['¡'] = 'i'
+    conversion_dict['Έ'] = 'E'
+    conversion_dict['Ὴ'] = 'H'
+    conversion_dict['ʗ'] = 'C'
+    conversion_dict['Ŷ'] = 'Y'
+    conversion_dict['ĥ'] = 'h'
+    conversion_dict['Ὰ'] = 'A'
+    conversion_dict['Ń'] = 'N'
+    conversion_dict['У'] = 'y'
+
 
     return conversion_dict
