@@ -174,7 +174,7 @@ for dirpath, subdirs, files in os.walk(rootdir):
                             break
                         str_to_write += line[i:i+indice_lastspace].strip() + '\n'
                         i += indice_lastspace + 1
-                    str_to_write += line[i:-1].strip() + '\n'
+                    str_to_write += line[i:].strip() + '\n'
                 else:
                     str_to_write += line.strip() + '\n'
             pages = len(treeroot.findall('.//PB'))

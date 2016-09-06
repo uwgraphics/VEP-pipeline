@@ -1,4 +1,9 @@
-#encoding = utf-8
+def getBrevigraphList():
+    brevs = ['CON','bus','con', 'er','is','PER','per','pre','pri','PRI','PRO','pro','qu','quam','que','QUE','qui','QUOD','quod','ris','rum','RUM','sed','ser','ur','us','US','es','etc','ou','precipi','subli','ignifi']
+    shorthand = ['THAT','that','half','ducat','quarter','hundred','aqua fortis','aqua regis','air','alembic','alum','antimony','aqua regis','arsenic','ashes','quicklime','potash','query','vitriol','abl.','vinegar','sulfur','fire','earth','glass','tartar','talc']
+    brevs.extend(shorthand)
+    return brevs
+
 def getConversionDict():
     conversion_dict = dict()
     # conversion_dict is a hand-curated dictionary of ascii equivalents for common unicode characters in the TCP
@@ -125,7 +130,7 @@ def getConversionDict():
     conversion_dict['Ū'] = 'U^'
     conversion_dict['Ȳ'] = 'Y^'
     conversion_dict['ā'] = 'a^'
-    conversion_dict['e'] = 'e^'
+    conversion_dict['ē'] = 'e^'
     conversion_dict['ī'] = 'i^'
     conversion_dict['ō'] = 'o^'
     conversion_dict['ū'] = 'u^'
@@ -173,6 +178,7 @@ def getConversionDict():
     conversion_dict['\u2022'] = '^'
     conversion_dict['\u2018'] = '\''
     conversion_dict['﻿'] = '@'
+    conversion_dict['⁂'] = '*'
 
 
     conversion_dict['\u0163'] = 't'
