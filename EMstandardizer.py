@@ -25,6 +25,7 @@ parser.add_argument('--token_csv', help='generate token csvs', action='store_tru
 corrections_made = defaultdict(int)
 file_corrections = defaultdict(int)
 file_tokens = defaultdict(int)
+researched_words = []
 standard_d = {}
 long_d = {}
 curFile = ''
@@ -53,11 +54,11 @@ def getToken(word, rule='', flag='', tagind=''):
     except IndexError:
         er = 's'
     if rule != '':
-        return ([word, word.lower(), er, 'strd', tagind, ' '.join(rule)])
+        return ([word, word.lower(), er, 'Standardized', tagind, ' '.join(rule)])
     if replaceWord(word.lower()) != word.lower():
-        return ([replaceWord(word), replaceWord(word).lower(), er, 'strd', 0, word])
-    if flag:
-        return ([word, word.lower(), er, 'considrd', 0, ''])
+        return ([replaceWord(word), replaceWord(word).lower(), er, 'Standardized', 0, word])
+    if word.lower() in researched_words:
+        return ([word, word.lower(), er, 'Researched', 0, ''])
     else:
         return([word, word.lower(), er, '', tagind, ''])
 
@@ -137,6 +138,10 @@ if __name__ == '__main__':
     if dict_path:
         compileDictionaries(dict_path)
 
+
+    r_file = open('researched_words.pickle', mode='rb')
+    researched_words = pickle.load(r_file)
+    r_file.close()
     #create output directory if it does not already exist
     if not os.path.isdir(output_path):
         os.mkdir(output_path)
@@ -227,7 +232,7 @@ if __name__ == '__main__':
                                 break
                         if not ruleFound:
                             if args.token_csv and '\n' not in word and ' ' not in word:
-                                tokens.append(getToken(word, flag='cons'))
+                                tokens.append(getToken(word))
                             line.append(replaceWord(word))
                     else:
                         if args.token_csv and '\n' not in word and ' ' not in word:
@@ -249,7 +254,7 @@ if __name__ == '__main__':
                     cwriter.writerow(["tokenIndex", "original"])
                     i = 0
                     for row in tokens:
-                        if row[3] == 'strd':
+                        if row[3] == 'Standardized':
                             cwriter.writerow([i, row[5]])
                         i += 1
 

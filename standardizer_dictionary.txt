@@ -20642,7 +20642,7 @@ vvorshippers:worshippers:0
 vvorshipping:worshipping:0
 vvorships:worships:0
 vvorthe:worth:0
-vvorthelyworhtily::0
+vvorthely:worthily:0
 vvorthies:worthies:0
 vvorthiest:worthiest:0
 vvorthines:worthiness:0
